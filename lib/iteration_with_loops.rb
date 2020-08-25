@@ -4,15 +4,7 @@ def find_min_in_nested_arrays(src)
   new_Array = []
   count = 0
     while count < src.length do
-
-      count_2 = 0
-      while count_2 < src[count].length do
-
-        if (src[count][count_2].length < new_Array.length )
-          new_Array.push(src[count][count_2])
-        end
-      count_2 += 1
-      end
+      new_Array.push(src.sort[0])
       count += 1
     end
     new_Array
